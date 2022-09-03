@@ -6,7 +6,6 @@ import warnings
 warnings.filterwarnings("ignore")
 
 carriers = {'verizon':'vzwpix.com', 'att':'mms.att.net', 'tmobile':'tmomail.net'}
-# pw = open("pw.txt").read()
 
 
 print("Welcome to LMS, Luke Message Service")
@@ -16,7 +15,6 @@ host = input('Enter host address:\n')
 
 contacts = {}
 f = open('contacts.txt', 'a')
-# f.write('Luke, 5718880684@mms.att.net\nAlso Luke, 5718880684@mms.att.net\n')
 f.close()
 
 
@@ -81,7 +79,6 @@ def importContacts(fileName):
 
 
 contacts = importContacts('contacts.txt')
-#enterContact("Atharva", )
 print('Logging in...')
 log = login(username, pw)
 ipt = ''
@@ -134,8 +131,3 @@ while ipt != 'done':
 
 logout(log);
 
-#Me - 5718880684@txt.att.net
-#Pavan - 7035980278@vtext.com
-#Aadi - 7038701218@tmomail.net
-#Varun - 7038176529@vtext.com000
-#Ian - 703-4207783
